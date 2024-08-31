@@ -1,0 +1,185 @@
+/* src/App.css */
+
+/* Variables CSS */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #fff;
+  --background-color: #f5f5f5;
+  --font-color: #333;
+  --header-height: 60px;
+  --input-background: #fff;
+  --input-border: #ccc;
+  --input-focus: #4CAF50;
+  --error-color: #ff4d4d;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.main-content {
+  margin-top: var(--header-height);
+  flex: 1;
+}
+
+/* Section Styles */
+.section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  background-color: var(--input-background);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--input-focus);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+.thank-you-message {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Project Styles */
+.projects .project {
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px; /* Añade un margen superior para separar el footer del contenido */
+  flex-shrink: 0;
+}
